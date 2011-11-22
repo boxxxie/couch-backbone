@@ -1,6 +1,6 @@
 var campaignList;
 
-var Campaign = couchDoc.extend();
+var Campaign = couchModel();
 var Campaigns = couchCollection({db:'campaigns'},{model:Campaign});
 campaignList = new Campaigns();
 campaignList.fetch(
